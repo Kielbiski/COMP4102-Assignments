@@ -25,7 +25,7 @@ dst_pts = np.float32([kp2[matches[m].trainIdx].pt for m in range(0, 20) ]).resha
 
 
 ##################################################################################
-# Added Code
+# Question 2
 #################################################################################
 # Calculate the homography between the src and dst points
 M, mask = cv2.findHomography(src_pts, dst_pts, cv2.RANSAC)
